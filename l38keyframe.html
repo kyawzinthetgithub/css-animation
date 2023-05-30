@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyframe</title>
+
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: steelblue;
+
+			animation-name: myanni;
+			animation-duration: 5s;
+		}
+
+		@keyframes myanni{
+			0%{
+				transform: translate(0);
+			}
+
+			50%{
+				transform: translate(500px);
+			}
+
+			100%{
+				transform: translateX(500px) translateY(500px);
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="box"></div>
+
+</body>
+</html>
+
+<!-- 9AM -->

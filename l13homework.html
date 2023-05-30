@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homework</title>
+
+		<style type="text/css">
+
+		*{
+			perspective: 1000px;
+		}
+
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container{
+			
+			width: 800px;
+			background: #f4f4f4;
+
+			}
+
+			.div1{
+				width: 400px;
+				height: 100px;
+				background: red;
+				background: linear-gradient(black,silver);
+				/*background: red;*/
+				border: 1px solid black;
+			 	box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+
+
+
+				margin: auto;
+
+				position: relative;
+
+			}
+
+			.div2{
+				width: 300px;
+				height: 100px;
+				background: black;
+				color: white;
+				background: linear-gradient(black,silver);
+				border: 1px solid black;
+				box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+
+				transform: rotateX(45deg);
+
+				padding: 50px;
+
+				position: absolute;
+				top: -140%;
+				left: -3px;
+
+				z-index: 1;
+				
+			}
+
+			.div3{
+				width: 60px;
+				height: 100px;
+				background: #fff;
+				position: absolute;
+				bottom: 0;
+				left: 35%;
+				border: 1px solid black;
+				box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+
+
+				transition: all 0.1s;
+				transform-origin: left ;
+
+				
+
+			}
+
+			.div3:hover{
+				transform-origin: left bottom;
+				/*top: 20%;*/
+				transform:skewY(20deg) rotateY(-35deg);
+
+			}
+
+			.div4{
+				width: 60px;
+				height: 100px;
+				background: #fff;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				border: 1px solid black;
+				box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+
+
+				transform:skewY(-20deg) rotateY(35deg);
+				transform-origin: right ;
+
+				transition: all 0.1s;
+
+
+
+			}
+
+			.div4:hover{
+
+				transform:skewY(0) rotateY(0) ;
+
+			}
+
+
+		</style>
+	
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="div1">
+				<div class="div2"></div>
+				<div class="div3"></div>
+				<div class="div4"></div>
+			</div>
+			
+
+		</div>
+		
+	</body>
+</html>
